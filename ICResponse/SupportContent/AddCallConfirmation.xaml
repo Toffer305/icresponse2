@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ICResponse.SupportContent.AddCallConfirmation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"              
+             >
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Margin="5" FontSize="14" HorizontalAlignment="Center">Please click the button when you are ready to begin a call.</Label>
+        <mui:ModernButton Grid.Row="1" Grid.Column="0" Content="Start a Call" HorizontalAlignment="Center" Margin="5" Click="Button_Click"/>
+
+    </Grid>                
+            
+</UserControl>

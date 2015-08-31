@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
+    <chart:ResourceDictionaryCollection x:Key="CustomOverviewColors">
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="Brush1" Color="Chartreuse" />
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="Brush2" Color="Red" />
+        </ResourceDictionary>
+    </chart:ResourceDictionaryCollection>   
+    
+</ResourceDictionary>

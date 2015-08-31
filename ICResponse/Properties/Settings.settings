@@ -1,0 +1,150 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ICResponse.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LoginPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LoginUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AgentID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AgentInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO agents (first, last, email, password) VALUES (?first, ?last, ?email, ?password)</Value>
+    </Setting>
+    <Setting Name="AgentSelectByEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM agents WHERE email=</Value>
+    </Setting>
+    <Setting Name="CallCurrentIDSelect" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT MAX(uid) FROM calls WHERE tech=</Value>
+    </Setting>
+    <Setting Name="GetDBTime" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT NOW()</Value>
+    </Setting>
+    <Setting Name="GetGroupedCalls" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT tech,AVG(TIME_TO_SEC(TIMEDIFF(stopTime,startTime))) AS TechAverageDuration,COUNT(*) AS NumOfRows FROM calls WHERE date=CURDATE() GROUP BY tech</Value>
+    </Setting>
+    <Setting Name="LoginLevel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">logout</Value>
+    </Setting>
+    <Setting Name="DeleteCurrentCall" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM calls WHERE ticketID=</Value>
+    </Setting>
+    <Setting Name="DBServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.163</Value>
+    </Setting>
+    <Setting Name="DBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">icresponse</Value>
+    </Setting>
+    <Setting Name="DBUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">remoter</Value>
+    </Setting>
+    <Setting Name="DBPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A9m1n</Value>
+    </Setting>
+    <Setting Name="SelectColorForAgent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT color FROM agents WHERE email=@email</Value>
+    </Setting>
+    <Setting Name="LoginNick" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TodayCallSelect" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT ticketID, tech, brand, company,contact,phone,email, date, startTime, stopTime, holdtime, duration, issue, resolution, iscase, casenumber, queuename FROM calls WHERE date=CURDATE() ORDER BY ticketID DESC</Value>
+    </Setting>
+    <Setting Name="SelectedFontSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">large</Value>
+    </Setting>
+    <Setting Name="GetOverallAverageTime" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT AVG(TIME_TO_SEC(TIMEDIFF(stopTime,startTime))) AS OverallAverageDuration FROM calls WHERE date=CURDATE() </Value>
+    </Setting>
+    <Setting Name="SelectedAccentColor" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FFE51400</Value>
+    </Setting>
+    <Setting Name="SelectedThemeSource" Type="System.Uri" Scope="User">
+      <Value Profile="(Default)">pack://application:,,,/ICResponse;component/Assets/ModernUI.ICRTheme.xaml</Value>
+    </Setting>
+    <Setting Name="SelectedThemeDisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">icrealtime</Value>
+    </Setting>
+    <Setting Name="GetOverview" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT name,phone,status,passed  FROM acdoverview WHERE name !='John Bartel' AND name !='Michael Olivera' AND name !='Brian Roberts' AND name !='Jason Zandman' AND name NOT LIKE 'ICR%'</Value>
+    </Setting>
+    <Setting Name="GetIdleCallCounts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT COUNT(*) FROM acdoverview WHERE phone='Idle'  AND name !='John Bartel' AND name !='Michael Olivera' AND name !='Brian Roberts' AND name !='Jason Zandman' AND name NOT LIKE 'ICR%'</Value>
+    </Setting>
+    <Setting Name="GetInCallCounts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT COUNT(*) FROM acdoverview WHERE phone='In Call'  AND name !='John Bartel' AND name !='Michael Olivera' AND name !='Brian Roberts' AND name !='Jason Zandman' AND name NOT LIKE 'ICR%'</Value>
+    </Setting>
+    <Setting Name="GetTotalDailyCallCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT COUNT(*) FROM calls WHERE date=CURDATE()</Value>
+    </Setting>
+    <Setting Name="smtpport" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="smtphost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="smtpusername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">icresponse.pwreset@gmail.com</Value>
+    </Setting>
+    <Setting Name="smtppassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Samurai8</Value>
+    </Setting>
+    <Setting Name="smtpsubjectline" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ICResponse Password Request</Value>
+    </Setting>
+    <Setting Name="smtpmessagebody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">You have requested your current password:</Value>
+    </Setting>
+    <Setting Name="Emailmessageheader" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ICResponse Password Request.</Value>
+    </Setting>
+    <Setting Name="SelectAgentByEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM agents WHERE email=@email</Value>
+    </Setting>
+    <Setting Name="GetAllCalls" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT ticketID, tech, brand, company,contact,phone,email, date, startTime, stopTime, holdtime, duration, issue, resolution, iscase, casenumber, queuename FROM calls ORDER BY ticketID DESC LIMIT 100</Value>
+    </Setting>
+    <Setting Name="GetVoicemails" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM voicemails</Value>
+    </Setting>
+    <Setting Name="GetCallVolume" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT startTime,COUNT(*) FROM calls WHERE date=CURDATE() GROUP BY startTime</Value>
+    </Setting>
+    <Setting Name="AgentFirstName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AgentLastName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InsertCallRecord" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO calls (tech, status, company, contact, phone, email, date, startTime, stopTime, holdtime, duration, brand, issue, resolution, iscase, casenumber) VALUES (?tech, ?status, ?company, ?contact, ?phone, ?email, ?date, ?startTime, ?stopTime, ?holdtime, ?duration, ?brand, ?issue, ?resolution, ?iscase, ?casenumber)</Value>
+    </Setting>
+    <Setting Name="UpdateCallRecord" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UPDATE calls SET company=?company, contact=?contact, phone=?phone, email=?email, brand=?brand, issue=?issue, resolution=?resolution, iscase=?iscase, casenumber=?casenumber WHERE uid=?uid </Value>
+    </Setting>
+    <Setting Name="GetActiveCalls" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT name FROM acdoverview WHERE phone='In Call'</Value>
+    </Setting>
+    <Setting Name="ACDLoginURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/Login.php?</Value>
+    </Setting>
+    <Setting Name="ACDGoBusy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/ReadyBusy.php?</Value>
+    </Setting>
+    <Setting Name="ACDOverViewURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/activity_monitor.php</Value>
+    </Setting>
+    <Setting Name="getTicketIDFromUID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT ticketID FROM calls WHERE uid=</Value>
+    </Setting>
+    <Setting Name="getMaxTicketForTech" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT MAX(ticketID) FROM calls WHERE tech=</Value>
+    </Setting>
+    <Setting Name="getCompanyFromUID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT company FROM calls WHERE uid=</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

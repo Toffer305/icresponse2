@@ -1,0 +1,109 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
+    <chart:ResourceDictionaryCollection x:Key="CustomAgentColors">
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush1" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkBlue" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush2" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkCyan" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush3" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkGoldenrod" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush4" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkOrange" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush5" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkGreen" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush6" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkMagenta" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush7" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkOrchid" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush8" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkSeaGreen" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush9" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkSlateBlue" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="Brush10" StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.75">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="Silver" Offset="0" />
+                        <GradientStop Color="DarkViolet" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        
+        
+    </chart:ResourceDictionaryCollection>   
+    
+</ResourceDictionary>
